@@ -1,9 +1,10 @@
 # Decentralized Asset Management 
-+ Asset Management on the blockchain with initial focus on vehicles.
++ This is a service for an Asset Management Project on the blockchain with initial focus on vehicles.
 + With Ethereum as the blockchain in use.
 
 # Contributing
 + This project is open to contributors
++ The smart contract is written in solidity
 
 # Features
 + Create Asset: Create and register asset to an owner
