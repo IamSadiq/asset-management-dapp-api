@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <H4>ASSET COMMIT</H4>
+    <form action="http://localhost:3333/api/assets/" method="post">
+        <input type="text" name="chasis" placeholder="chasis">
+        <input type="text" name="engine" placeholder="engine">
+        <input type="text" name="v_type" placeholder="v_type">
+        <input type="text" name="v_make" placeholder="v_make">
+        <input type="text" name="dateCreated" placeholder="dateCreated">
+        <input type="text" name="userID" placeholder="userID">
+        <button>submit</button>
+    </form>
+
+    <H4>ASSET TRANSFER</H4>
+    <form action="http://localhost:3333/api/assets/transfer/" method="post">
+        <input type="text" name="dateAcquired" placeholder="dateAcquired">
+        <input type="text" name="vehicleID" placeholder="vehicleID">
+        <input type="text" name="userID" placeholder="userID">
+        <input type="text" name="recipientID" placeholder="recipientID">
+        <button>submit</button>
+    </form>
+
+    <H4>ASSET TRAILING</H4>
+    <form action="http://localhost:3333/api/assets/transactions/trailing/" method="post">
+        <input type="text" name="vehicleID" placeholder="vehicleID">
+        <input type="text" name="txID" placeholder="txID">
+        <button>submit</button>
+    </form>
+
+
+    <h4>USER COMMIT</h4>
+    <form action="http://localhost:3333/api/users/" method="post">
+        <input type="text" name="email" placeholder="email">
+        <input type="password" name="pword" placeholder="password">
+        <button>submit</button>
+    </form>
+</body>
+</html>
