@@ -13,11 +13,12 @@
 + Get Asset Transaction Counts
 + Get Asset details
 
+
 # Endpoints || Routes
 
-+ ---------------ASSETS---------------------
+##ASSETS
 
-## Get Asset Transaction By Id
+### Get Asset Transaction By Id
 
 verb: GET
 
@@ -26,7 +27,7 @@ route: api/assets/transactions/
 request param : txID
 
 
-## Get Asset Trail By Id
+### Get Asset Trail By Id
 
 verb: GET
 
@@ -35,7 +36,7 @@ route: api/assets/trail/
 request param: vehicleID
 
 
-## Get Asset By Id
+### Get Asset By Id
 
 verb: GET
 
@@ -44,7 +45,7 @@ route: api/assets/
 request param: vehicleID
 
 
-## Create New Asset
+### Create New Asset
 
 verb: POST
 
@@ -61,7 +62,7 @@ payload (post data): {
 response: String
 
 
-## Transfer Asset
+### Transfer Asset
 
 verb: POST
 
@@ -78,9 +79,11 @@ payload (post data): {
 response: String
 
 
-+ ------------------------USER------------------------
 
-## Get Users
+
+##USERS
+
+### Get Users
 
 verb: GET
 
@@ -97,7 +100,7 @@ response: [
 ]
 
 
-## Get User By Email
+### Get User By Email
 
 verb: GET
 
@@ -106,7 +109,7 @@ route: api/users/
 request param: email
 
 
-## Create User
+### Create User
 
 verb: POST
 
@@ -123,7 +126,7 @@ payload (post data): {
 response: String
 
 
-## Update User
+### Update User
 
 verb: POST
 
