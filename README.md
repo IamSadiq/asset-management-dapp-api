@@ -5,6 +5,7 @@
 # Contributing
 + This project is open to contributors
 + The smart contract is written in solidity
++ We might still need to consider what data needs to be made public (ethereum blockchain) and what needs to be kept private in the database.
 
 # Features
 + Create Asset: Create and register asset to an owner
