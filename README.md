@@ -17,38 +17,75 @@
 
 + ---------------ASSETS---------------------
 
-GET: api/assets/transactions/
-argument: txID
+## Get Asset Transaction By Id
 
-GET: api/assets/trail/
-argument: vehicleID
+verb: GET
 
-GET: api/assets/
-argument: vehicleID
+route: api/assets/transactions/
 
-POST: api/assets/new/
-send: data{
+request param : txID
+
+
+## Get Asset Trail By Id
+
+verb: GET
+
+route: api/assets/trail/
+
+request param: vehicleID
+
+
+## Get Asset By Id
+
+verb: GET
+
+route: api/assets/
+
+request param: vehicleID
+
+
+## Create New Asset
+
+verb: POST
+
+route: api/assets/new/
+
+request param (payload): {
 	plate,
 	chasis,
 	engine,
 	v_type,
 	v_make
 }
+
 response: String
 
-POST: api/assets/transfer/
-send: data{
+
+## Transfer Asset
+
+verb: POST
+
+route: api/assets/transfer/
+
+request param (payload): {
 	plate,
 	chasis,
 	engine,
 	v_type,
 	v_make
 }
+
 response: String
 
 
 + ------------------------USER------------------------
-GET: api/users/
+
+## Get Users
+
+verb: GET
+
+route: api/users/
+
 response: [
 	{
 		plate,
@@ -60,28 +97,44 @@ response: [
 ]
 
 
-GET: api/users/
-argument: email
+## Get User By Email
 
-POST: api/users/
-send: data{
+verb: GET
+
+route: api/users/
+
+request param: email
+
+
+## Create User
+
+verb: POST
+
+route: api/users/
+
+payload: data{
 	email,
 	password,
 	assets: [
 		{vehicleID}
 	]
 }
+
 response: String
 
 
-POST: api/users/update/
-send: data{
+## Update User
+
+verb: POST
+
+route: api/users/update/
+
+payload: data{
 	email,
 	password,
 	assets: [
 		{vehicleID}
 	]
 }
+
 response: String
-
-
