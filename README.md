@@ -50,7 +50,7 @@ verb: POST
 
 route: api/assets/new/
 
-request param (payload): {
+payload (post data): {
 	plate,
 	chasis,
 	engine,
@@ -67,7 +67,7 @@ verb: POST
 
 route: api/assets/transfer/
 
-request param (payload): {
+payload (post data): {
 	plate,
 	chasis,
 	engine,
@@ -112,7 +112,7 @@ verb: POST
 
 route: api/users/
 
-payload: {
+payload (post data): {
 	email,
 	password,
 	assets: [
@@ -129,7 +129,7 @@ verb: POST
 
 route: api/users/update/
 
-payload: {
+payload (post data): {
 	email,
 	password,
 	assets: [
