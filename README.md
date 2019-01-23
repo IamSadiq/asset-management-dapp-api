@@ -112,7 +112,7 @@ verb: POST
 
 route: api/users/
 
-payload: data{
+payload: {
 	email,
 	password,
 	assets: [
@@ -129,7 +129,7 @@ verb: POST
 
 route: api/users/update/
 
-payload: data{
+payload: {
 	email,
 	password,
 	assets: [
